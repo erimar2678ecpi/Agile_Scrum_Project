@@ -1,0 +1,4 @@
+Last Calculation: 95 + 90 = 185
+Last Calculation: 86 * 10 = 860
+Last Calculation: 7 + 80 = 87
+Last Calculation: 42 * 5 = 210

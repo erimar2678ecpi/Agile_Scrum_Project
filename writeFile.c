@@ -5,7 +5,7 @@
 extern char lastCalculation[100];
 
 void writeFile() {
-    FILE *file = fopen("output.txt", 'w'); // "w" = write/overwrite file
+    FILE *file = fopen("output.txt", "a"); // "a" = append to file
     if (file == NULL) {
         printf("Error opening file.\n");
         return;
