@@ -9,11 +9,15 @@ void readFile() {
     }
 
     char line[256];
+    int hasContent = 0;
     printf("=== File Contents ===\n");
     while (fgets(line, sizeof(line), file)) {
+        hasContent = 1;
         printf("%s", line);
     }
-
+    if (ferror(file)) {
+        printf("Error reading from file.\n");
+    }
     fclose(file);
     printf("=====================\n");
 }
